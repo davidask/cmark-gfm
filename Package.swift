@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-  name: "CMarkGFM",
+  name: "cmark",
   products: [
     .library(
-      name: "CMarkGFM",
-      targets: ["CMarkGFM"]),
+      name: "cmark",
+      targets: ["cmark"]),
   ],
   targets: [
     .target(
-      name: "CMarkGFM",
+      name: "cmark",
       path: "src",
       // Exclude the main file so cmark is built as a library.
       exclude: ["main.c"]
